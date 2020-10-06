@@ -1,0 +1,20 @@
+.slogan {
+    letter-spacing: .1em;
+    margin: 0;
+
+    &__title {
+        display: block;
+        .setFontProps(@fz-slogan-lg-basic, 1em);
+        @media (min-width: @md) { font-size: @fz-slogan-lg-basic * 1.83; }
+        font-weight: @thin;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        display: block;
+        .setFontProps(@fz-slogan-sm-basic, 1em);
+        @media (min-width: @md) { font-size: @fz-slogan-sm-basic * 1.78; }
+        font-weight: bold;
+        padding-bottom: 18.72%;
+    }
+}

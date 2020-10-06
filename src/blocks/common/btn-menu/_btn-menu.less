@@ -1,0 +1,23 @@
+.btn-menu {
+    .setFontProps(15px, 30px);
+    color: inherit;
+
+    &:focus {
+        outline: none;
+    }
+
+    &__top-line,
+    &__bottom-line {
+        display: block;
+        height: 4px;
+        background-color: #fff;
+        transition: all .5s ease-out;
+        margin: 0;
+        border: none;
+    }
+
+    &__content {
+        display: inline-block;
+        transition: all .5s ease-out;
+    }
+}
