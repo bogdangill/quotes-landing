@@ -1,0 +1,22 @@
+.important-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.3em 0;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 5rem;
+        height: 2px;
+        margin-top: 2.5em;
+        background-color: black;
+    }
+
+    &__text {
+        line-height: 1.1em;
+        font-weight: @semiBold;
+        text-align: center;
+        margin: 0;
+    }
+}
