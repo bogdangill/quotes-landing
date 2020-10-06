@@ -1,0 +1,36 @@
+.slider {
+    position: absolute;
+    top: 0;
+    .fullScale;
+    z-index: 1;
+
+    &__inner {
+        overflow: hidden;
+        .fullScale;
+    }
+
+    &__slides {
+        position: relative;
+        .fullScale;
+    }
+
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        .transparent;
+
+        &_active {
+            opacity: 1;
+        }
+    }
+
+    &__controls-wrapper {
+        position: absolute;
+        bottom: 8%;
+        width: 100%;
+    }
+}
+
+@import "../../common/controls/_controls.less";
