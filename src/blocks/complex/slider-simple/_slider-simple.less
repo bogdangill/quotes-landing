@@ -1,0 +1,62 @@
+@import "../../common/blockquote/_blockquote.less";
+
+.slider-simple {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__inner,
+    &__text-content {
+        flex-grow: 1;
+        flex-basis: 100%;
+        min-height: 81vw;
+        overflow: hidden;
+
+        @media (min-width: 481px) {
+            flex-basis: 50%;
+            min-height: 41.25vw;
+        }
+    }
+
+    &__text-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 5.25%;
+    }
+
+    &__blockquote {
+        margin: 1em 0;
+        @media (min-width: @xl) { max-width: 83%; }
+    }
+
+    &__slides {
+        position: relative;
+        .fullScale;
+    }
+
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        .transparent;
+
+        &_active {
+            opacity: 1;
+        }
+    }
+
+    &__description {
+        max-width: 73%;
+        margin: 0 auto;
+    }
+
+    &__controls {
+        margin: 1rem 0;
+        padding: 0;
+    }
+}
+
+@import "../../common/controls/_controls.less";
