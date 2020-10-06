@@ -1,0 +1,30 @@
+.blockquote {
+
+    .fontInherit;
+
+    &_lg {
+        .setFontProps(1.1rem, 1.33em);
+        @media (min-width: @md) { font-size: 1.8rem; }
+    }
+
+    &__quote {
+        .fontInherit;
+
+        &_bold {
+            font-weight: bold;
+        }
+    }
+
+    &__author {
+        .fontInherit;
+        font-weight: @regular;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+
+        &_normal {
+            font-style: normal;
+            font-weight: @light;
+        }
+    }
+}
