@@ -1,0 +1,52 @@
+@import "../../common/responsive-poster/_responsive-poster.less";
+
+.poster {
+    display: inline-block;
+    position: relative;
+    transition: all .2s ease-out;
+
+    &__btns {
+        position: absolute;
+        bottom: .3rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__btn-share {
+        font-size: 0.75rem;
+    }
+
+    &__btn-buy,
+    &__btn-share {
+        color: white;
+        padding: 1rem;
+        transition: filter .2s, transform .1s ease-in;
+    }
+
+    &__btn-buy:hover,
+    &__btn-share:hover {
+        filter: drop-shadow(5px 5px 10px black);
+        transform: scale(1.1);
+    }
+
+    &__btn-buy:active,
+    &__btn-share:active {
+        transform: scale(1);
+    }
+
+    &__btn-share::after {
+        display: inline-block;
+        content: '';
+        background-image: url('../../src/blocks/common/poster/img/btn-icon/share-icon.svg');
+        background-size: cover;
+        height: 1em;
+        width: 20px;
+        margin-left: 6px;
+        filter: invert(100);
+    }
+
+    &:hover {
+        box-shadow: 0px 2px 100px 0px rgba(0, 0, 0, 0.43);
+    }
+}
