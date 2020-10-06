@@ -1,0 +1,30 @@
+.btn {
+    .setFontProps(1rem, 1em);
+    cursor: pointer;
+    font-family: 'Montserrat', serif;
+    .boldAndCaps;
+    background: none;
+    border: none;
+    line-height: 1em;
+    .looseText;
+    transition: transform 150ms ease-in-out;
+
+    &_md, &_lg {
+        box-sizing: border-box;
+        .bordered(2px, black);
+        border-radius: 5px;
+    }
+
+    &_md {
+        padding: .5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    &_lg {
+        padding: 1rem 1.5rem;
+    }
+
+    &:hover {
+        transform: scale(0.95);
+    }
+}

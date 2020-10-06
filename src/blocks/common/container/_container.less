@@ -1,0 +1,23 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &_narrow {
+        max-width: 970px;
+        justify-content: center;
+    }
+
+    &_mid {
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    &_wide {
+        max-width: 1400px;
+        justify-content: space-between;
+    }
+}
