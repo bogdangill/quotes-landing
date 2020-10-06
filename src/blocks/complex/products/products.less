@@ -1,0 +1,50 @@
+@import "../../common/poster/_poster.less";
+@import "../../common/wrapper-fix/_wrapper-fix.less";
+
+.products {
+    background-color: #f2f4f5;
+    padding: 3rem 0;
+
+    &__wrapper-fix {
+        @media (min-width: @lg) {
+            flex-basis: 52%;
+        }
+    }
+
+    &__poster {
+        flex-grow: 0;
+        flex-shrink: 2;
+        margin: 1rem 0;
+        flex-basis: 100%;
+    }
+    
+    &__poster_3,
+    &__poster_4 {
+        @media (min-width: @sm) {
+            flex-basis: 44.65%;
+        }
+    }
+
+    &__poster_1 {
+        @media (min-width: @lg) {
+            flex-basis: 40%;
+        }
+    }
+
+    &__poster_2 {
+        @media (min-width: @lg) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__poster_3,
+    &__poster_4 {
+        @media (min-width: @lg) {
+            flex-basis: 44.65%;
+        }
+    }
+
+    &__btn_lg {
+        margin: 4.3% auto;
+    }
+}
