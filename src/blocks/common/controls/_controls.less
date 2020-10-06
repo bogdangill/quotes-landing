@@ -1,0 +1,33 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    &__control {
+        display: inline-block;
+        margin: 0 .5rem;
+        .square(16px);
+        .makeRound;
+        background-color: black;
+        cursor: pointer;
+        transition: background-color 1s;
+
+        &_lite {
+            box-sizing: border-box;
+            .square(10px);
+            .bordered(1px, #949088);
+            margin: 0;
+            margin-right: .5rem;
+            background-color: transparent;
+        }
+
+        &_active {
+            background-color: #fff;
+
+            &_lite {
+                background-color: #949088;
+            }
+        }
+    }
+}
