@@ -1,0 +1,57 @@
+//mixins
+
+.prevent-overcrossing {
+    max-width: 100%;
+}
+
+.growing-line {
+    width: calc((100vw - 1600px)/(1600 - 320) * (80 - 350) + 5.71%);
+}
+
+.boldAndCaps {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.looseText {
+    letter-spacing: .2em;
+}
+
+.setFontProps(@size, @height) {
+    font-size: @size;
+    line-height: @height;
+}
+
+.fontInherit {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.fullScale {
+    width: 100%;
+    height: 100%;
+}
+
+.bordered(@size, @color) {
+    border: @size solid @color;
+}
+
+.square(@size) {
+    width: @size;
+    height: @size;
+}
+
+.makeRound {
+    border-radius: 50%;
+}
+
+.noOffsets {
+    margin: 0;
+    padding: 0;
+}
+
+.transparent {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+// / mixins
