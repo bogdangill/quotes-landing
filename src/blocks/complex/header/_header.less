@@ -1,0 +1,71 @@
+@import "../../common/header-top/_header-top.less";
+@import "../../common/logo/_logo.less";
+@import "../../common/btn-menu/_btn-menu.less";
+@import "../../common/nav-list/_nav-list.less";
+@import "../../common/slogan/_slogan.less";
+@import "../../complex/slider/_slider.less";
+
+.home__header {
+    position: relative;
+    height: 80vh;
+    background-color: #0d1013;
+
+    @media (min-width: @md) {
+        height: 62.5vw;
+    }
+}
+
+.header {
+    color: white;
+
+    &__header-top {
+        margin-top: 4.1%;
+    }
+
+    &__logo {
+        z-index: 2;
+    }
+
+    &__btn-menu {
+        z-index: 3;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        background-color: rgba(19, 22, 25, 0.9);
+        .fullScale;
+        font-family: 'Montserrat', serif;
+        z-index: 2;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .5s ease-in-out;
+
+        @media (min-width: @md) {
+            display: block;
+        }
+
+        &_hidden {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 0;
+
+        @media (min-width: @md) {
+            margin-top: 11.25%;
+            margin-left: 18.7%;
+        }
+    }
+
+    &__slogan {
+        z-index: 2;
+    }
+}
