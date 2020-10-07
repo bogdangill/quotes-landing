@@ -1,0 +1,27 @@
+@import "../../common/social/_social.less";
+
+.footer-bottom {
+    padding: .5rem 0;
+    background-color: #f2f4f5; 
+
+    &__copyright {
+        align-self: center;
+        order: 2;
+        text-align: center;
+
+        @media (min-width: @lg) {
+            order: 1;
+            text-align: left;
+        }
+    }
+
+    &__social {
+        flex-basis: 80%;
+
+        @media (min-width: @lg) {
+            flex-basis: 25.71%;
+            order: 2;
+            margin: 0;
+        }
+    }
+}

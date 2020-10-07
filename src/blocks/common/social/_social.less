@@ -1,0 +1,42 @@
+.addBg(@counter) when (@counter > 0) {
+    .addBg(@counter - 1);
+
+    &_@{counter} {
+       background-image: url('../../src/blocks/common/social/img/@{counter}.svg');
+    }
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 1;
+    margin: 0 auto;
+    align-self: center;
+    list-style: none;
+    padding: 0;
+
+    &__item {
+        padding: 1.5rem;
+
+        @media (min-width: @lg) {
+            padding: 0;
+        }
+    }
+
+    &__link {
+        box-sizing: border-box;
+        display: block;
+        .square(1rem);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: contrast(0)brightness(140%);
+        transition: filter 250ms ease-in-out;
+        .addBg(8);
+
+        &:hover {
+            filter: none;
+        }
+    }
+}

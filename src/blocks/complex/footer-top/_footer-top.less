@@ -1,0 +1,32 @@
+@import "../../common/nav-list/_nav-list.less";
+@import "../../common/form-subscribe/_form-subscribe.less";
+
+.footer-top {
+    padding-top: 6.25%;
+    padding-bottom: 4%;
+
+    &__item {
+        flex-basis: 100%;
+
+        @media (min-width: @md) {
+            flex-basis: 50%;
+        }
+
+        @media (min-width: @xl) {
+            flex-basis: 25%;
+        }
+    }
+
+    &__contacts {
+        margin-bottom: 1rem;
+    }
+
+    &__contact {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
